@@ -81,6 +81,7 @@ class Game
       turn
     end
     board.display
+    puts "/n/n"
   end
 
   def play
