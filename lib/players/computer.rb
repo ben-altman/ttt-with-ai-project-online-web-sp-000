@@ -16,13 +16,13 @@ module Players
 #  - choose the third position.
       elsif Game::WIN_COMBINATIONS.detect do |combo|
 #binding.pry
-        if combo.select{|e| board.cells[e]==self.token}.size==2 && combo.any? {|e| board.cells[e]==" "}
-          input = combo.select{|e| !board.taken?(e)}.first.to_i.+(1).to_s
-#          input = combo.detect{|e| board.cells[e]==" "}.to_s
-        elsif combo.select{|e| board.cells[e]!=self.token &&
-          board.cells[e]!=" "}.count == 2
-          input = combo.detect{|e| board.cells[e]==" "}.to_s
-        end
+          if combo.select{|e| board.cells[e]==self.token}.size==2 && combo.any? {|e| board.cells[e]==" "}
+            input = combo.select{|e| !board.taken?(e)}.first.to_i.+(1).to_s
+#           input = combo.detect{|e| board.cells[e]==" "}.to_s
+          elsif combo.select{|e| board.cells[e]!=self.token &&
+            board.cells[e]!=" "}.count == 2
+            input = combo.detect{|e| board.cells[e]==" "}.to_s
+          end
         end
       else
         available = board.cells.select {|e| e == " "}
