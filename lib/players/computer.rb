@@ -22,7 +22,7 @@ binding.pry
 #           input = combo.detect{|e| board.cells[e]==" "}.to_s
           elsif combo.select{|e| board.cells[e]!=self.token &&
             board.cells[e]!=" "}.count == 2
-            input = combo.detect{|e| board.cells[e]==" "}.to_s
+            input = combo.detect{|e| board.cells[e]==" "}.+1.to_s
           end
         end
       else
