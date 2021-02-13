@@ -51,3 +51,5 @@ def game_play
   else
     puts "Thank you for playing!"
   end
+
+end
