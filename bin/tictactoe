@@ -48,4 +48,4 @@ def game_play
   answer
 end
 
-game_play until n
+game_play until "n"
