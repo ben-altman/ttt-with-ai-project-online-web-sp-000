@@ -34,7 +34,7 @@ end
 
 if input == "3"
   puts "Just sit back and watch!"
-  sleep 2
+  sleep 1
   game = Game.new(Players::Computer.new(token="X"),Players::Computer.new(token="O"))
   game.board.display
   game.play
