@@ -27,7 +27,7 @@ module Players
 #           #   input = combo.detect{|e| board.cells[e]==" "}.+1.to_s
 #            end
 #            input
-        end
+#        end
       else
         available = board.cells.select {|e| e == " "}
         input = available.sample
