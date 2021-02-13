@@ -5,7 +5,6 @@ module Players
   class Computer < Player
     def move(board)
 #      input = rand(1..9).to_s
-def move(board)
      if board.cells[4] == " "
        "5"
      elsif board.cells[0] == " "
