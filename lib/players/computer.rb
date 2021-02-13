@@ -24,28 +24,14 @@ module Players
         "8"
       end
     end
-    
+
   end
 
 end
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#binding.pry
+#### Unworking Algorithm ####
+#
 #       input = nil
 #       if board.cells[0] == " "
 #         input = "1"
