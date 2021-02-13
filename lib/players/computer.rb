@@ -23,8 +23,8 @@ module Players
             cell = combo.detect{|e| board.cells[e]==" "}
             cell = cell+1
             input = cell.to_s
-          else combo.select{|e| board.cells[e]!=self.token &&
-          #   board.cells[e]!=" "}.count == 2
+          else combo.select{|e| board.cells[e]!=self.token && board.cells[e]!=" "}.count == 2
+             board.cells[e]!=" "}.count == 2
           #   input = combo.detect{|e| board.cells[e]==" "}.+1.to_s
            end
            input
