@@ -16,7 +16,6 @@ module Players
  # - iterate through WIN_COMBINATIONS. Find a combination with two positions taken by the player's own token.
  # - choose the third position.
       elsif board.turn_count > 3
-
         Game::WIN_COMBINATIONS.detect do |combo|
 
           if combo.select{|e| board.cells[e]==self.token}.size==2 && combo.any? {|e| board.cells[e]==" "}
