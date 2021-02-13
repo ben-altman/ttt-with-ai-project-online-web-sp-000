@@ -42,7 +42,7 @@ end
 
 puts "Would you like to play again?"
 puts "Enter y for yes or n for no"
-answer = gets.strip 
+answer = gets.strip
 
 if answer == "y"
   tictactoe
