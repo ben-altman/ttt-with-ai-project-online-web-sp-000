@@ -45,11 +45,7 @@ def game_play
   puts "Would you like to play again?"
   puts "Enter y for yes or n for no"
   answer = gets.strip
-
-  if answer == "y"
-    tictactoe
-  else
-    puts "Thank you for playing!"
-  end
-
+  answer
 end
+
+game_play until n
