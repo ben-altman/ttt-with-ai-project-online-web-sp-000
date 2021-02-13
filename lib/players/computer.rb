@@ -24,6 +24,7 @@ module Players
      elsif board.cells[7] == " "
        "8"
      end
+   end
 
 
 
