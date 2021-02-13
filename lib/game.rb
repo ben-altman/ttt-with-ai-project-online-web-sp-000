@@ -82,6 +82,7 @@ class Game
     end
     board.display
     puts "\n\n"
+    sleep 3
   end
 
   def play
