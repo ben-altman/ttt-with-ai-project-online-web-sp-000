@@ -10,7 +10,7 @@ module Players
       if board.cells[0] == " "
         input = "1"
       elsif board.cells[0] != " " && board.cells[4] == " "
-        input = "5"     
+        input = "5"
       elsif board.turn_count == 2
         input = [1,3,7,9].find{|e| !board.taken?(e)}.to_s
 #  - iterate through WIN_COMBINATIONS. Find a combination with two positions taken by the player's own token.
@@ -26,6 +26,7 @@ module Players
           #   board.cells[e]!=" "}.count == 2
           #   input = combo.detect{|e| board.cells[e]==" "}.+1.to_s
            end
+           input
         end
       else
         available = board.cells.select {|e| e == " "}
