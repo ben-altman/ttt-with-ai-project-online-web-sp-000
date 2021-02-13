@@ -34,6 +34,7 @@ module Players
         available = board.cells.select {|e| e == " "}
         input = available.sample
       end
+      input
     end
 
   end
