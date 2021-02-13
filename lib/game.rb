@@ -78,6 +78,7 @@ class Game
     if board.valid_move?(user_input)
       board.update(user_input, current_player)
     else
+      puts "Choose a number not already taken"
       turn
     end
     board.display
