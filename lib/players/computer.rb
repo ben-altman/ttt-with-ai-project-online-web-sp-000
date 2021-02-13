@@ -55,7 +55,7 @@ def move(board)
 #  # - choose the third position.
 #       elsif board.turn_count
 #         Game::WIN_COMBINATIONS.detect do |combo|
-# 
+#
 #           if combo.select{|e| board.cells[e]==self.token}.size==2 && combo.any? {|e| board.cells[e]==" "}
 # #            input = combo.select{|e| !board.taken?(e)}.first.to_i.+(1).to_s
 #             cell = combo.detect{|e| board.cells[e]==" "}
@@ -74,7 +74,7 @@ def move(board)
 #       end
 #       input
 #     end
-# 
+#
 #   end
 
 end
