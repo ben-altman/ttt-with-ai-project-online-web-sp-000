@@ -19,7 +19,7 @@ binding.pry
 #binding.pry
           if combo.select{|e| board.cells[e]==self.token}.size==2 && combo.any? {|e| board.cells[e]==" "}
 #            input = combo.select{|e| !board.taken?(e)}.first.to_i.+(1).to_s
-           input = combo.detect{|e| board.cells[e]==" "}
+            cell = combo.detect{|e| board.cells[e]==" "}
             input = input+1.to_s
           elsif combo.select{|e| board.cells[e]!=self.token &&
             board.cells[e]!=" "}.count == 2
