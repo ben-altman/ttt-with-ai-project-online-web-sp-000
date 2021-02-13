@@ -22,10 +22,10 @@ binding.pry
             cell = combo.detect{|e| board.cells[e]==" "}
             cell = cell+1
             input = cell.to_s
-          elsif combo.select{|e| board.cells[e]!=self.token &&
-            board.cells[e]!=" "}.count == 2
-            input = combo.detect{|e| board.cells[e]==" "}.+1.to_s
-          end
+          # elsif combo.select{|e| board.cells[e]!=self.token &&
+          #   board.cells[e]!=" "}.count == 2
+          #   input = combo.detect{|e| board.cells[e]==" "}.+1.to_s
+          # end
         end
       else
         available = board.cells.select {|e| e == " "}
