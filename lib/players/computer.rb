@@ -11,7 +11,7 @@ module Players
         input = "1"
       elsif board.cells[0] != " " && board.cells[4] == " "
         input = "5"
-      elsif board.turn_count == 2
+      elsif board.turn_count == 2 || board.turn_count == 3
         input = [1,3,7,9].find{|e| !board.taken?(e)}.to_s
  # - iterate through WIN_COMBINATIONS. Find a combination with two positions taken by the player's own token.
  # - choose the third position.
